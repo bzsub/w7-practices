@@ -1,54 +1,117 @@
-/*
-
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    outline: none;
-    text-decoration: none;
-    outline: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-ol,
-ul,
-li {
-    list-style: none;
-    display: block;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-a img {
-    border: none;
-}
-
-button,
-a {
-    cursor: pointer;
-    color: inherit;
-}
-
-textarea {
-    resize: none;
-}
-
-button,
-input,
-textarea,
-select {
-    appearance: none !important;
-    -webkit-appearance: none !important;
-    border-radius: 0;
-}
-*/
 /* <-- CSS RESET */
-input {
+body {
+  background-color: #f5f3f1;
+}
+
+form {
+  width: 100%;
+  min-width: 320px;
+  margin: 100px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Shippori Antique', sans-serif;
+  font-weight: bold;
+  color: rgba(61, 54, 54, 0.966);
+}
+
+form h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+}
+
+form div {
+  padding: 10px;
+}
+
+form input,
+form button,
+form label,
+form select {
   display: block;
-  margin: 20px;
+  margin: 10px auto;
+  width: 90%;
+  font-size: 1.2rem;
+  background-color: #f5f3f1;
+}
+
+form input[type="checkbox"] {
+  position: relative;
+  left: 5vw;
+  height: 30px;
+  width: 30px;
+  margin: 20px 0 0;
+  background-color: #f5f3f1;
+}
+
+form input[type="file"] {
+  position: relative;
+  left: 2vw;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  padding: 5px;
+}
+
+form button {
+  padding: 10px 0;
+  border: 4px solid rgba(61, 54, 54, 0.966);
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: rgba(61, 54, 54, 0.966);
+  color: #f5f3f1;
+}
+
+@media screen and (min-width: 1201px) {
+  form {
+    width: 60%;
+  }
+  input,
+  button,
+  label,
+  select {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 601px) {
+  form {
+    width: 80%;
+  }
+  input,
+  button,
+  label,
+  select {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+  input,
+  button,
+  label,
+  select {
+    font-size: 1.2rem !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
