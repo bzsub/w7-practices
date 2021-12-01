@@ -68,15 +68,15 @@ const formElement = `
 const formSubmit = (event) => {
     event.preventDefault();
     const et = event.target;
-    console.log(et);
+    //console.log(et);
     et.classList.add('submitted');
     const etValue = et.querySelector(`select[name="where"]`).value;
-    console.log(etValue);
+    //console.log(etValue);
 }
 
 const inputEvent = (event) => {
     const fName = document.querySelector(`input[name='firstName']`);
-    console.log(fName);
+    //console.log(fName);
     if (event.target.getAttribute('name') === 'name'){
         console.log(event.target.value);
         document.getElementById('inputValueContent').innerHTML = event.target.value;
