@@ -79,7 +79,7 @@ const inputEvent = (event) => {
     //console.log(fName);
     if (event.target.getAttribute('name') === 'name'){
         console.log(event.target.value);
-        document.getElementById('inputValueContent').innerHTML = event.target.value;
+        //document.getElementById('inputValueContent').innerHTML = event.target.value;
 
     };
 }
