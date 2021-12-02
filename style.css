@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -77,6 +78,56 @@ form button {
 form button:hover {
   background: rgba(61, 54, 54, 0.966);
   color: #f5f3f1;
+}
+
+/* <-- THURSDAY --> */
+form div.file {
+  position: relative;
+  width: 90%;
+  min-height: 50px;
+  border: 1px solid black;
+  background-color: chocolate;
+  margin: 20px auto;
+  padding-bottom: 20px;
+}
+
+form div.file::after {
+  content: "Kattints vagy húzd ide a file-t";
+  display: block;
+  color: white;
+  opacity: 0.65;
+  font-size: 1.1rem;
+  padding: 20px;
+  text-align: center;
+}
+
+form div.file input[type="file"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  opacity: 0;
+}
+
+form div.file label {
+  color: white;
+  background: none;
+  text-align: center;
+}
+
+#inputValueContent {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+#inputValueContent img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media screen and (min-width: 1201px) {
